@@ -10,7 +10,7 @@ script:
 
 language: generic
 
-################## Elastic Beanstalk ################
+################## Elastic Beanstalk ##################
 # deploy:
 #   provider: elasticbeanstalk
 #   region: "asia"
@@ -21,5 +21,7 @@ language: generic
 #   on:
 #     branch: master //When code is pushed to master
 #   access_key_id:
-#     secure: $AWS_ACCESS_KEY //Generated keys (95.)
-#####################################################
+#     secure: "$AWS_ACCESS_KEY" //Generated keys (95.)
+#   secret_access_key:
+#     secure: "$AWS_SECRET_KEY" //Generated keys (95.)
+#######################################################
