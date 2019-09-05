@@ -9,3 +9,17 @@ script:
   - docker run -e CI=true sereneho/docker-react npm run test
 
 language: generic
+
+################## Elastic Beanstalk ################
+# deploy:
+#   provider: elasticbeanstalk
+#   region: "asia"
+#   app: "docker"
+#   env: "Docker-env"
+#   bucket_name: "..." //Services -> Amazon S3
+#   bucker_path: "docker"
+#   on:
+#     branch: master //When code is pushed to master
+#   access_key_id:
+#     secure: $AWS_ACCESS_KEY //Generated keys (95.)
+#####################################################
